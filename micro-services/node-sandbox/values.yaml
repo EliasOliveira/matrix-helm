@@ -6,11 +6,11 @@ replicaCount: 1
 
 image:
   repository: eliasjunioroliveira/matrix-sandbox
-  tag: 0.0.1-rc2
+  tag: 0.0.1-rc3
   pullPolicy: IfNotPresent
 
 
-containerPort: 3000
+containerPort: 80
 
 service:
   type: ClusterIP
