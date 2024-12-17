@@ -42,17 +42,6 @@ data:
   ZK_SERVER_PORT: "2888"
   ZK_ELECTION_PORT: "3888"
   ZK_REPLICAS: "1"
----
-apiVersion: policy/v1beta1
-kind: PodDisruptionBudget
-metadata:
-  name: zookeeper-budget
-  namespace: kafka
-spec:
-  selector:
-    matchLabels:
-      app: zookeeper
-  minAvailable: 2
 ---  
 apiVersion: v1
 kind: Service
