@@ -52,7 +52,6 @@ spec:
     metadata:
       labels:
         app: kafka
-      annotations:
     spec:
       serviceAccountName: kafka-sa
       initContainers:
@@ -91,7 +90,7 @@ spec:
         - ./bin/kafka-server-start.sh
         - /etc/kafka/server.properties
         - --override
-        -   zookeeper.connect=zookeeper-svc.kafka.svc.cluster.local:2181
+        -   zookeeper.connect=zookeeper-svc.default.svc.cluster.local:2181
         - --override
         -   log.retention.hours=-1
         - --override
