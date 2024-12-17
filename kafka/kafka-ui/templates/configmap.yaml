@@ -4,6 +4,8 @@ metadata:
   name: kafka-ui-configmap
 data:
   config.yml: |-
+    server:
+      port: 8090
     kafka:
       clusters:
         - name: yaml
