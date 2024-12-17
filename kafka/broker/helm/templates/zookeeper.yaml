@@ -95,7 +95,7 @@ spec:
       containers:
       - name: k8szk
         imagePullPolicy: Always
-        image: gcr.io/google_samples/k8szk:v3
+        image: ibmcom/k8szk:v2
         ports:
         - containerPort: 2181
           name: client
