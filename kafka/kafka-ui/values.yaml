@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: provectuslabs/kafka-ui
-  tag: 0.0.1-rc1
+  tag: latest
   pullPolicy: IfNotPresent
 
 
