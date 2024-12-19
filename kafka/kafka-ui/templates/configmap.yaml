@@ -5,7 +5,7 @@ metadata:
 data:
   config.yml: |-
     server:
-      port: 8090
+      port: 8080
     kafka:
       clusters:
         - name: yaml
