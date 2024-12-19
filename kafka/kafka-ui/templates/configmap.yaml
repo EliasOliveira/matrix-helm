@@ -9,10 +9,16 @@ data:
     kafka:
       clusters:
         - name: yaml
-          bootstrapServers: kafka-cluster-broker-endpoints:9092
+          bootstrapServers: kafka-broker.default.svc.cluster.local:9092
     auth:
       type: disabled
     management:
       health:
         ldap:
           enabled: false
+# TODO see https://docs.kafka-ui.provectus.io/configuration/helm-charts/quick-start
+
+# kafka-broker.default.svc.cluster.local:9092
+# zookeeper-svc.default.svc.cluster.local:2181
+# [podname].broker.kafka.svc.cluster.local
+# svc/kafka-broker
