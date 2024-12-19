@@ -24,6 +24,9 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: DYNAMIC_CONFIG_ENABLED
+              value: "true"
           ports:
             - name: http
               containerPort: {{ .Values.containerPort }}
