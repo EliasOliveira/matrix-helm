@@ -28,6 +28,12 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: FIREBASE_SERVICE_ACCOUNT
+              valueFrom:
+                secretKeyRef:
+                  name: firebase
+                  key: firebase_service_account
           volumeMounts:
             - name: config
               mountPath: /configuration
