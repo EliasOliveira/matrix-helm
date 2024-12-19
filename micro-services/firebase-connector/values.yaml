@@ -8,7 +8,7 @@ replicaCount: 1
 
 image:
   repository: eliasjunioroliveira/matrix-view-firebase-connector
-  tag: 1.0.0-rc3-6653a06-2024-12-19-18-32-04
+  tag: 1.0.0-rc3-9c21399-2024-12-19-18-54-50
   pullPolicy: IfNotPresent
 
 
