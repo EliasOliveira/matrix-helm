@@ -6,5 +6,11 @@ data:
   config.json: |
     {
       "kafka-broker": "kafka-broker.default.svc.cluster.local:9092",
-      "port": 80
+      "port": 80,
+      "collections": [
+        {
+          "collection": "data",
+          "topic": "data"
+        }
+      ]
     }
