@@ -21,15 +21,15 @@ spec:
         release: {{ .Release.Name }}
     spec:
       volumes:
-        - name: env
+        - name: config
           configMap:
-            name: env
+            name: config
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
-            - name: env
+            - name: config
               mountPath: /configuration
           ports:
             - name: http

@@ -1,7 +1,10 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: env
+  name: config
 data:
-  .env: |
-    key=value
+  config.json: |
+    {
+      "kafka-broker": "localhost:9092",
+      "port": 80
+    }
