@@ -33,7 +33,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: firebase
-                  key: firebase_service_account
+                  key: service_account
           volumeMounts:
             - name: config
               mountPath: /configuration
