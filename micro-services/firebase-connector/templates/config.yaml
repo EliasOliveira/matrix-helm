@@ -5,6 +5,6 @@ metadata:
 data:
   config.json: |
     {
-      "kafka-broker": "localhost:9092",
+      "kafka-broker": "kafka-broker.default.svc.cluster.local:9092",
       "port": 80
     }
