@@ -20,4 +20,4 @@ version: 0.1.0-rc1
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
-appVersion: "1.0.0-rc3-37d70c1-2024-12-20-16-16-37"
+appVersion: "0.0.1-SNAPSHOT-c73fcb1-2024-12-20-18-07-24"
