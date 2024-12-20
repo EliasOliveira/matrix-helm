@@ -8,7 +8,7 @@ replicaCount: 1
 
 image:
   repository: eliasjunioroliveira/matrix-view-kafka-stream-java
-  tag: 0.0.1-SNAPSHOT-af67ec9-2024-12-20-18-15-22
+  tag: 0.0.1-SNAPSHOT-8a55170-2024-12-20-18-53-11
   pullPolicy: IfNotPresent
 
 

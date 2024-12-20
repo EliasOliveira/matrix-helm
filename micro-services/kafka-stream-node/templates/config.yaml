@@ -5,12 +5,12 @@ metadata:
 data:
   config.json: |
     {
-      "kafka-broker": "localhost:9092",
+      "kafka-broker": "kafka-broker.default.svc.cluster.local:9092",
       "port": 8081,
       "kafka": {
         "streams": {
           "noptions": {
-            "metadata.broker.list": "localhost:9092",
+            "metadata.broker.list": "kafka-broker.default.svc.cluster.local:9092",
             "group.id": "kafka-streams-test-native",
             "client.id": "kafka-streams-test-name-native",
             "event_cb": true,

@@ -4,6 +4,12 @@ metadata:
   name: config
 data:
   application.yaml: |
-    spring:
-      application:
-        test: "nada de banana"
+    kafka:
+      streams:
+        applicationIdConfig: kafka-stream-java
+        bootstrapServersConfig: kafka-broker.default.svc.cluster.local:9092
+        defaultKeySerdeClassConfig: org.apache.kafka.common.serialization.Serde$StringSerde
+        defaultValueSerdeClassConfig: org.apache.kafka.common.serialization.Serde$StringSerde
+        topics:
+          input: sandbox
+          output: sandbox-out
