@@ -39,7 +39,7 @@ spec:
           resources:
             requests:
               cpu: 100m
-              memory: 5G
+              memory: 5000Mi
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
       nodeSelector:
