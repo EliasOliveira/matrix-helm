@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: oci://registry-1.docker.io/bitnamicharts/elasticsearch
-  tag: latest
+  repository: elastic/elasticsearch
+  tag: 8.16.2
   pullPolicy: IfNotPresent
 
 containerPort: 80
