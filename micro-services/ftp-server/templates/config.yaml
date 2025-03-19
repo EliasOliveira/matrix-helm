@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config
+data:
+  config.json: |
+    {
+      "path": "/Users/junioroliveira/tmp",
+      "port": 80,
+      "serverPort": 21
+    }
