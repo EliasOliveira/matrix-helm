@@ -35,6 +35,9 @@ spec:
             - name: http
               containerPort: {{ .Values.containerPort }}
               protocol: TCP
+            - name: ftp
+              containerPort: 21
+              protocol: FTP
           livenessProbe:
             httpGet:
               path: /
