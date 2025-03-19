@@ -37,7 +37,7 @@ spec:
               protocol: TCP
             - name: ftp
               containerPort: 21
-              protocol: FTP
+              protocol: TCP
           livenessProbe:
             httpGet:
               path: /
